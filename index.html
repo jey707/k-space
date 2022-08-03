@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="img/favicon/startup.png" />
     <link rel="stylesheet" href="css/index.css" />
     <title>k-space</title>
+    <script src="https://unpkg.com/youtube-background@1.0.14/jquery.youtube-background.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
   </head>
   <body>
     <header>
@@ -50,10 +53,22 @@
       </div>
     </header>
     <div class="contents">
-      <div
-        class="video_wrap"
-        style="background-color: #f3ebeb; height: 500px"
-      ></div>
+      <div class="video_wrap">
+        <div class="video" id="video_id">
+          <div
+            id="youtube"
+            data-vbg-autoplay="true"
+            data-vbg="https://youtu.be/ska_rwleWtY"
+          ></div>
+        </div>
+        <div class="video_cover">
+          <span class="cover_text"></span>
+          <span class="mouse_icon"> </span>
+        </div>
+        <div class="video_cover_txt">
+          <span class="arrow"></span>
+        </div>
+      </div>
     </div>
   </body>
   <script
