@@ -3,6 +3,7 @@ header {
   width: 100vw;
   height: 101px;
   font-size: 1.15rem;
+  box-sizing: border-box;
 }
 header .header-bar {
   width: 100%;

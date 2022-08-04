@@ -1,19 +1,26 @@
 @import url(reset.css);
+
+@import url(root.css);
 @import url(header.css);
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   font-family: "Lato", sans-serif;
 }
-
-.content {
+body {
+  overflow-x: hidden;
+}
+.contents {
   width: 100vw;
+  height: 1200px;
+  box-sizing: border-box;
 }
 
 .contents .video_wrap {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 80vh;
+  margin-bottom: 100px;
 }
 
 .contents .video_wrap .video {
@@ -121,4 +128,205 @@
     transform: rotate(45deg) translate(10px, 10px);
     opacity: 0;
   }
+}
+
+.contents .news_wrap .k-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.contents .news_wrap .k-news .news_title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contents .news_wrap .k-news .news_title h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 2;
+  color: var(--main-color);
+}
+
+.contents .news_wrap .k-news .news_title p {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.contents .news_wrap .k-news .news_title p span {
+  font-weight: 600;
+}
+.contents .news_wrap .k-news .news_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 80%;
+  height: 450px;
+}
+.contents .news_wrap .k-news .news_list .news_item {
+  position: relative;
+  overflow: hidden;
+}
+
+.contents .news_wrap .k-news .news_list .news_item .item_cover {
+  position: absolute;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  transition: 0.5s ease-in-out;
+}
+
+.contents .news_wrap .k-news .news_list .news_item:hover .item_cover {
+  opacity: 0.6;
+  z-index: 4;
+}
+
+.contents .news_wrap .k-news .news_list .news_item:nth-child(1),
+.contents .news_wrap .k-news .news_list .news_item:nth-child(2) {
+  grid-row: 1 / 3;
+}
+
+.contents .news_wrap .k-news .news_list .news_item .item_img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+.contents .news_wrap .k-news .news_list .news_item:hover .item_img {
+  transform: scale(1.1);
+}
+
+.contents .news_wrap .k-news .news_list .news_item .item_text {
+  z-index: 5;
+}
+
+.contents .news_wrap .k-news .news_list .news_item:nth-child(1) .item_text,
+.contents .news_wrap .k-news .news_list .news_item:nth-child(2) .item_text {
+  position: absolute;
+  color: #fff;
+  width: 310px;
+  left: 57px;
+  top: 320px;
+}
+
+.contents .news_wrap .k-news .news_list .news_item:nth-child(3) .item_text,
+.contents .news_wrap .k-news .news_list .news_item:nth-child(4) .item_text {
+  position: absolute;
+  color: #fff;
+  width: 310px;
+  left: 57px;
+  top: 86px;
+  text-align: center;
+}
+
+.contents .news_wrap .k-news .news_list .news_item .item_text h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.contents .news_wrap .k-news .news_list .news_item:nth-child(1) .item_text h1,
+.contents .news_wrap .k-news .news_list .news_item:nth-child(2) .item_text h1 {
+  padding-bottom: 14px;
+  border-bottom: 3px solid #fff;
+}
+.contents .news_wrap .k-news .news_list .news_item:nth-child(1) .item_text p,
+.contents .news_wrap .k-news .news_list .news_item:nth-child(2) .item_text p {
+  font-size: 14px;
+  padding-top: 15px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 2em;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.contents .news_wrap .news_room {
+  text-align: center;
+}
+.contents .news_wrap .news_room .news_btn {
+  text-align: center;
+  display: inline-block;
+  width: 360px;
+  height: 55px;
+  border: 2px solid var(--main-color);
+  line-height: 3.4;
+  color: var(--main-color);
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 1.1rem;
+}
+
+.contents .news_wrap .news_room .news_btn:hover {
+  background-color: var(--main-color);
+  color: RGB(14, 61, 138);
+}
+
+.contents .news_wrap .sns_con {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.contents .news_wrap .sns_con ul {
+  width: 80%;
+  display: flex;
+}
+.contents .news_wrap .sns_con ul li {
+  width: 334px;
+  height: 135px;
+  box-sizing: border-box;
+  color: #81828c;
+  display: flex;
+  align-items: center;
+}
+.contents .news_wrap .sns_con ul li:first-child {
+  background: url("https://www.koreaaero.com/KO/images/index/bg_videoClip.jpg")
+    0 0 no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.contents .news_wrap .sns_con ul li:nth-child(2) {
+  background-color: var(--main-color);
+}
+.contents .news_wrap .sns_con ul li:nth-child(3) {
+  background-color: #fac213;
+}
+.contents .news_wrap .sns_con ul li:nth-child(4) {
+  background-color: #fef9a7;
+}
+.contents .news_wrap .sns_con ul li:not(:first-child) span {
+  line-height: 1.5;
+}
+.contents .news_wrap .sns_con ul li span {
+  margin-left: 25px;
+}
+.contents .news_wrap .sns_con ul li span p {
+  font-size: 1.2rem;
+}
+
+.contents .news_wrap .sns_con ul li span p i {
+  font-size: 2.5rem;
+}
+
+.contents .news_wrap .sns_con ul li span h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.contents .news_wrap .sns_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contents .news_wrap .sns_btn p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 5px;
+  color: var(--main-color);
+}
+
+.contents .news_wrap .sns_btn a img {
+  width: 45px;
+  margin: 0 5px;
 }
