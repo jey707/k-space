@@ -1,0 +1,141 @@
+footer {
+  height: 150px;
+  padding: 50px 30px;
+}
+footer .footer_box {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+footer .footer_box .left_box {
+  display: inline-block;
+  position: relative;
+}
+footer .footer_box .left_box .left_logo {
+  display: inline-block;
+  width: 350px;
+  height: 50px;
+  vertical-align: top;
+  background: url("/img/index/k-space\(logo\).png") no-repeat;
+  background-position: center;
+}
+footer .footer_box .left_box .left_addres {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 10px;
+}
+footer .footer_box .left_box .left_addres p {
+  color: rgb(96, 96, 96);
+  line-height: 1.8;
+}
+footer .footer_box .left_box .left_addres p span {
+  font-weight: 600;
+}
+footer .footer_box .left_box .info_btn {
+  position: absolute;
+  width: 348px;
+  text-align: center;
+  top: 51px;
+}
+footer .footer_box .left_box .info_btn a {
+  font-size: 12px;
+  display: inline-block;
+  height: 30px;
+  padding: 0 4px;
+  color: #fff;
+  text-align: center;
+  line-height: 2.3;
+  box-sizing: border-box;
+  font-weight: 400;
+  border-radius: 4px;
+}
+footer .footer_box .left_box .info_btn a .file_icon {
+  margin-left: 4px;
+}
+footer .footer_box .left_box .info_btn a:nth-child(1) {
+  background-color: #0e3d8a;
+  margin-bottom: 7px;
+}
+footer .footer_box .left_box .info_btn a:nth-child(2) {
+  background-color: #2a59c0;
+}
+footer .footer_box .left_box .info_btn a:nth-child(3) {
+  background-color: #008ab7;
+}
+footer .footer_box .left_box .info_btn a:nth-child(4) {
+  background-color: #041a3d;
+  width: 272px;
+}
+
+footer .footer_box .right_box {
+  position: relative;
+}
+footer .footer_box .right_box .site_list {
+  width: 172px;
+  position: absolute;
+  top: 113px;
+  left: 29px;
+}
+footer .footer_box .right_box .site_list h3 {
+  border: 1px solid #041a3d;
+  position: relative;
+}
+footer .footer_box .right_box .site_list h3 a {
+  display: block;
+  padding: 9px 15px 9px 20px;
+  font-size: 13px;
+}
+footer .footer_box .right_box .site_list h3 i {
+  margin-left: 40px;
+  font-size: 16px;
+}
+footer .footer_box .right_box .site_list .site_link {
+  border: 1px solid #041a3d;
+  position: absolute;
+  bottom: 35px;
+  font-size: 13px;
+  background-color: #fff;
+  padding: 15px 15px;
+}
+footer .footer_box .right_box .site_list .site_link h4 {
+  font-size: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #041a3d;
+  font-weight: 600;
+  color: #0e3d8b;
+}
+footer .footer_box .right_box .site_list .site_link ul {
+  padding: 10px 0;
+}
+footer .footer_box .right_box .site_list .site_link ul li {
+  line-height: 1.3;
+  font-weight: 100;
+}
+footer .footer_box .right_box .show {
+  visibility: visible;
+  z-index: 100;
+  animation: fadeInUp 2s;
+}
+footer .footer_box .right_box .hide {
+  visibility: hidden;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translate3d(10, 100%, 0);
+  }
+  to {
+    transform: translateZ(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    /* opacity: 0; */
+    z-index: -1;
+    transform: translateZ(0);
+  }
+  to {
+    /* opacity: 1; */
+    transform: translate3d(0, 100%, 0);
+  }
+}

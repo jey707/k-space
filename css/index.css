@@ -2,6 +2,7 @@
 
 @import url(root.css);
 @import url(header.css);
+@import url(footer.css);
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
@@ -564,4 +565,34 @@ body {
   background-size: cover;
   background-blend-mode: darken;
   height: 260px;
+}
+.contents .sitemap_wrap {
+  /* height: 290px; */
+  padding: 50px 150px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.contents .sitemap_wrap .sitemap_ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.contents .sitemap_wrap .sitemap_ul li {
+  /* height: 100%; */
+}
+.contents .sitemap_wrap .sitemap_ul li dl dt {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: default;
+  margin-bottom: 20px;
+}
+.contents .sitemap_wrap .sitemap_ul li dl dt a {
+  cursor: default;
+}
+.contents .sitemap_wrap .sitemap_ul li dl dd {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  font-size: 14px;
+  font-weight: 100;
 }

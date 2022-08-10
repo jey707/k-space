@@ -50,9 +50,7 @@ fetch("https://api.upbit.com/v1/ticker?markets=KRW-BTC%2C%20KRW-ETH", options)
   .catch((err) => console.error(err));
 
 function tradePrice(res) {
-  console.log(res);
   res.forEach((element) => {
-    console.log(element);
     switch (element.market) {
       case "KRW-BTC": // 비트시세
         if (element.change === "RISE") {
@@ -71,7 +69,6 @@ function tradePrice(res) {
           .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
         break;
       case "KRW-ETH": // 이더시세
-        console.log("KRW-ETH here");
         if (element.change === "RISE") {
           eth_price.classList.add("rise");
           eth_color.classList.add("rise");
