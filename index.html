@@ -200,15 +200,37 @@
         </ul>
         <div class="button-bar">
           <div class="lang-ico">
-            <a href="javascript:void(0)"><i class="fa-solid fa-globe"></i></a>
+            <a href="javascript:void(0)" onclick="langOnOff()">
+              <i class="fa-solid fa-globe"></i>
+            </a>
+            <div class="lang-box lang-hide">
+             <a href="javascript:void(0);" class="lang">한국어</a>
+             <a href="javascript:void(0);" class="lang">English</a>
+             <a href="javascript:void(0);" class="lang">中文(简)</a>
+             <a href="javascript:void(0);" class="lang">中文(繁)</a>
+             <a href="javascript:void(0);" class="lang">日本語</a>
+            </div>
           </div>
           <div class="search-ico">
-            <a href="javascript:void(0)"
+            <a href="javascript:void(0)"onclick="searchOnOff()"
               ><i class="fa-solid fa-magnifying-glass"></i
             ></a>
           </div>
           <div class="menu-ico">
-            <a href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+            <a href="javascript:void(0)" ><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="search-box box-off">
+        <div class="search-form">
+          <div class="search">
+            <form>
+              <div class="input-box">
+                <input type="text" class="search-input" placeholder="검색어를 입력하세요.">
+                <button type="button" class="glass-btn search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button type="button" class="close-btn search-btn" onclick="searchOnOff()"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
