@@ -8,7 +8,9 @@ const arrow_up = '<i class="fa-solid fa-caret-up"></i>';
 const arrow_down = '<i class="fa-solid fa-caret-down"></i>';
 const eth_price = document.getElementById("eth_price");
 const eth_color = document.getElementById("eth_color");
-// const eth_arrow = document.getElementById("eth_arrow");
+const quickList = document.querySelector(".quick-list");
+const foldArrow = document.querySelector(".fold-arrow");
+const topBtn = document.querySelector(".top-btn");
 
 // youtube backgroud
 document.addEventListener("DOMContentLoaded", function () {
@@ -92,3 +94,23 @@ function tradePrice(res) {
     }
   });
 }
+
+function quickFold() {
+  if (quickList.classList.contains("fold-none")) {
+    quickList.classList.replace("fold-none", "fold-show");
+    foldArrow.style.transform = "rotate(0)";
+  } else {
+    quickList.classList.replace("fold-show", "fold-none");
+    foldArrow.style.transform = "rotate(180deg)";
+  }
+}
+
+let timeOut;
+
+function screenTop() {
+  if (window.scrollY != 0) {
+    window.scrollBy(0, -50);
+    timeOut = setTimeout("screenTop()", 1);
+  } else clearTimeout(timeOut);
+}
+topBtn.addEventListener("click", screenTop);

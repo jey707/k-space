@@ -109,33 +109,13 @@ footer .footer_box .right_box .site_list .site_link ul {
   padding: 10px 0;
 }
 footer .footer_box .right_box .site_list .site_link ul li {
-  line-height: 1.3;
+  line-height: 1.4;
   font-weight: 100;
 }
 footer .footer_box .right_box .show {
   visibility: visible;
   z-index: 100;
-  animation: fadeInUp 2s;
 }
 footer .footer_box .right_box .hide {
   visibility: hidden;
-}
-@keyframes fadeInUp {
-  0% {
-    transform: translate3d(10, 100%, 0);
-  }
-  to {
-    transform: translateZ(0);
-  }
-}
-@keyframes fadeInDown {
-  0% {
-    /* opacity: 0; */
-    z-index: -1;
-    transform: translateZ(0);
-  }
-  to {
-    /* opacity: 1; */
-    transform: translate3d(0, 100%, 0);
-  }
 }
