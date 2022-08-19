@@ -2,6 +2,7 @@ const body = document.querySelector("body");
 const searchWrap = document.querySelector(".search-box");
 const langBox = document.querySelector(".lang-box");
 const headerBar = document.querySelector(".header-bar");
+const allMenu = document.querySelector(".allmenu");
 let lastScrollTop = 0;
 
 function searchOnOff() {
@@ -19,6 +20,16 @@ function langOnOff() {
     langBox.classList.replace("lang-hide", "lang-show");
   } else {
     langBox.classList.replace("lang-show", "lang-hide");
+  }
+}
+
+function openMenu() {
+  if (allMenu.classList.contains("allmenu-hide")) {
+    allMenu.classList.replace("allmenu-hide", "allmenu-show");
+    body.style.overflow = "hidden";
+  } else {
+    allMenu.classList.replace("allmenu-show", "allmenu-hide");
+    body.style.removeProperty("overflow");
   }
 }
 

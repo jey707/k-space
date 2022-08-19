@@ -20,6 +20,7 @@
             <img src="img/index/k-space(logo).png" alt="logo" />
           </a>
         </div>
+        <div class="mobile-none">
         <nav class="menu-bar">
           <ul class="menu-ul">
             <li class="menu-li"><a href="javascript:void(0)">회사소개</a>
@@ -199,6 +200,7 @@
           <li><a href="javascript:void(0)">Facebook</a></li>
           <li><a href="javascript:void(0)">Instagram</a></li>
         </ul>
+      </div>
         <div class="button-bar">
           <div class="lang-ico">
             <a href="javascript:void(0)" onclick="langOnOff()">
@@ -218,7 +220,7 @@
             ></a>
           </div>
           <div class="menu-ico">
-            <a href="javascript:void(0)" ><i class="fa-solid fa-bars"></i></a>
+            <a href="javascript:openMenu()" ><i class="fa-solid fa-bars"></i></a>
           </div>
         </div>
       </div>
@@ -234,6 +236,89 @@
             </form>
           </div>
         </div>
+      </div>
+      <div class="allmenu allmenu-hide">
+        <div class="allmenu-con">
+          <button type="button" onclick="openMenu()" class="all-close"><i class="fa-solid fa-xmark fa-2x"></i></button>
+        <div class="allmenu-area">
+          <div class="inner">
+            <div class="menu-box company">
+              <a href="javascript:void(0)" class="tit">회사소개</a>
+              <ul class="menu-depth1">
+                <li><a href="javascript:void(0)">K-space소개</a></li>
+                <li><a href="javascript:void(0)">연혁</a></li>
+                <li><a href="javascript:void(0)">경영이념</a></li>
+                <li><a href="javascript:void(0)">CEO메시지</a></li>
+                <li><a href="javascript:void(0)">핵심역량</a></li>
+                <li><a href="javascript:void(0)">K-space브랜드</a></li>
+                <li><a href="javascript:void(0)">사업장</a></li>
+              </ul>
+            </div>
+            <div class="menu-box admin">
+              <a href="javascript:void(0)" class="tit">사업소개</a>
+              <div class="menu-se">
+                <strong>항공</strong>
+                <ul class="menu-block">
+                  <li><a href="javascript:void(0)">고정익</a></li>
+                  <li><a href="javascript:void(0)">회전익</a></li>
+                  <li><a href="javascript:void(0)">무인기</a></li>
+                  <li><a href="javascript:void(0)">항공기구조물</a></li>
+                  <li><a href="javascript:void(0)">훈련체계</a></li>
+                </ul>
+              </div>
+              <div class="menu-se">
+                <strong>우주</strong>
+                <ul class="menu-block">
+                  <li><a href="javascript:void(0)">위성</a></li>
+                  <li><a href="javascript:void(0)">한국형발사체</a></li>
+                </ul>
+              </div>
+              <div class="menu-se">
+                <strong>애프터마켓</strong>
+                <ul class="menu-block">
+                  <li><a href="javascript:void(0)">항공기정비</a></li>
+                  <li><a href="javascript:void(0)">성능개발</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu-box invest">
+              <a href="javascript:void(0)" class="tit">지속가능경영</a>
+              <ul class="menu-depth1">
+                <li><a href="javascript:void(0)">K-space소개</a></li>
+                <li><a href="javascript:void(0)">연혁</a></li>
+                <li><a href="javascript:void(0)">경영이념</a></li>
+                <li><a href="javascript:void(0)">CEO메시지</a></li>
+                <li><a href="javascript:void(0)">핵심역량</a></li>
+                <li><a href="javascript:void(0)">K-space브랜드</a></li>
+                <li><a href="javascript:void(0)">사업장</a></li>
+              </ul>
+            </div>
+            <div class="menu-box person">
+              <a href="javascript:void(0)" class="tit">홍보센터</a>
+              <ul class="menu-depth1">
+                <li><a href="javascript:void(0)">K-space소개</a></li>
+                <li><a href="javascript:void(0)">연혁</a></li>
+                <li><a href="javascript:void(0)">경영이념</a></li>
+                <li><a href="javascript:void(0)">CEO메시지</a></li>
+                <li><a href="javascript:void(0)">핵심역량</a></li>
+                <li><a href="javascript:void(0)">K-space브랜드</a></li>
+                <li><a href="javascript:void(0)">사업장</a></li>
+              </ul>
+              <div class="menu-depth1 partner-box tar-link">
+                <a href="javascript:void(0)" class="target-link">제품</a>
+                <a href="javascript:void(0)" class="target-link">Research</a>
+              </div>
+              <div class="menu-depth1 partner-box sns">
+                <ul class="sns-list">
+                  <li><a href="javascript:void(0)">1123132</a></li>
+                  <li><a href="javascript:void(0)">1123132</a></li>
+                  <li><a href="javascript:void(0)">1123132</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </header>
     <div class="contents">
@@ -534,7 +619,7 @@
           <div class="mask_con"></div>
           <div class="ir_tit defer_tit">
             <h5>IR 정보</h5>
-            <p>K-space의 꿈과 도전에 대해<br />일관된 경영정보를 제공합니다.</p>
+            <p>K-space의 꿈과 도전에 대해 일관된 경영정보를 제공합니다.</p>
           </div>
           <div class="ir_icon cir_icon">
             <a href="javascript:void(0)">
@@ -601,7 +686,7 @@
           <div class="defer_tit">
             <h5>입찰공고</h5>
             <p>
-              K-space는 공정한 절차를 통해<br />다양한 파트너와 함께 하고
+              K-space는 공정한 절차를 통해 다양한 파트너와 함께 하고
               있습니다.
             </p>
           </div>
