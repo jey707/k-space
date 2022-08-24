@@ -558,17 +558,17 @@ body {
   background-color: rgba(11, 108, 139, 0.8);
 }
 .contents .defer_wrap .ir_con {
-  background: rgba(0, 0, 0, 0.3) url("/img/index/ir_back.jpg") 0 0 no-repeat;
+  background: rgba(0, 0, 0, 0.3) url("../img/index/ir_back.jpg") 0 0 no-repeat;
   background-size: cover;
   background-blend-mode: darken;
 }
 .contents .defer_wrap .recru {
-  background: rgba(0, 0, 0, 0.3) url("/img/index/job.jpg") no-repeat;
+  background: rgba(0, 0, 0, 0.3) url("../img/index/job.jpg") no-repeat;
   background-size: cover;
   background-blend-mode: darken;
 }
 .contents .defer_wrap .bid_con {
-  background: rgba(0, 0, 0, 0.3) url("/img/index/bid.jpg") no-repeat;
+  background: rgba(0, 0, 0, 0.3) url("../img/index/bid.jpg") no-repeat;
   background-size: cover;
   background-blend-mode: darken;
   height: 260px;
