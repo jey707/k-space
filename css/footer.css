@@ -1,6 +1,6 @@
 footer {
   padding: 50px 10px;
-  width: 100vw;
+  /* width: 100vw; */
   box-sizing: border-box;
 }
 footer .footer_box {
@@ -86,10 +86,13 @@ footer .footer_box .right_box .site_list h3 a {
   display: block;
   padding: 9px 15px 9px 20px;
   font-size: 13px;
+  display: flex;
+  justify-content: space-between;
 }
 footer .footer_box .right_box .site_list h3 i {
-  margin-left: 40px;
-  font-size: 16px;
+  /* margin-left: 40px;
+  font-size: 16px; */
+  display: inline-block;
 }
 footer .footer_box .right_box .site_list .site_link {
   border: 1px solid #041a3d;
@@ -154,6 +157,6 @@ footer .footer_box .right_box .hide {
     bottom: 32px;
   }
   footer .footer_box .right_box .site_list h3 i {
-    float: right;
+    /* float: right; */
   }
 }
