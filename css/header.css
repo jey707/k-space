@@ -430,6 +430,7 @@ header .allmenu .allmenu-con .allmenu-area .inner .mobile-wrap {
   padding: 100px 15px 20px;
   box-sizing: border-box;
   position: relative;
+  display: none;
 }
 header .allmenu .allmenu-con .allmenu-area .inner .mobile-wrap .logo {
   position: absolute;
@@ -598,6 +599,9 @@ header
   }
   header .mobile-none {
     display: none;
+  }
+  header .allmenu .allmenu-con .allmenu-area .inner .mobile-wrap {
+    display: block;
   }
 
   header .allmenu .allmenu-con .allmenu-area .inner {
