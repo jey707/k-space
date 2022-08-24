@@ -3,6 +3,8 @@ const searchWrap = document.querySelector(".search-box");
 const langBox = document.querySelector(".lang-box");
 const headerBar = document.querySelector(".header-bar");
 const allMenu = document.querySelector(".allmenu");
+const mobileNav = document.querySelector(".mobile-nav");
+
 let lastScrollTop = 0;
 
 function searchOnOff() {
@@ -33,7 +35,23 @@ function openMenu() {
   }
 }
 
-// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+const moMenu = document.getElementsByClassName("first-area");
+
+const mobileMenu = function () {
+  let thisMenu = this.querySelector(".m-depth2");
+  let noneMenu = mobileNav.getElementsByClassName("m-depth2");
+  for (let i = 0; i < noneMenu.length; i++) {
+    console.log(noneMenu[i]);
+    let rayMenu = noneMenu[i];
+    rayMenu.style.display = "none";
+  }
+  thisMenu.style.display = "block";
+};
+
+for (let i = 0; i < moMenu.length; i++) {
+  moMenu[i].addEventListener("click", mobileMenu, false);
+}
+
 window.addEventListener(
   "scroll",
   function () {
