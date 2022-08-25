@@ -1,6 +1,5 @@
 footer {
   padding: 50px 10px;
-  /* width: 100vw; */
   box-sizing: border-box;
 }
 footer .footer_box {
@@ -29,6 +28,8 @@ footer .footer_box .left_box .left_addres {
 footer .footer_box .left_box .left_addres p {
   color: rgb(96, 96, 96);
   line-height: 1.8;
+  word-break: break-all;
+  word-wrap: pre-wrap;
 }
 footer .footer_box .left_box .left_addres p span {
   font-weight: 600;
@@ -158,5 +159,10 @@ footer .footer_box .right_box .hide {
   }
   footer .footer_box .right_box .site_list h3 i {
     /* float: right; */
+  }
+}
+@media (max-width: 830px) {
+  footer .footer_box {
+    width: 100%;
   }
 }
