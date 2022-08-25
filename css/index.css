@@ -777,11 +777,30 @@ body {
     font-size: 3.5rem;
     margin-bottom: 17px;
   }
+  .contents .busi_wrap .busi_con {
+    width: 100%;
+  }
 }
 @media (max-width: 650px) {
   .contents .busi_wrap .busi_con .busi_item span {
     width: 155px;
     height: 155px;
+  }
+
+  .contents .trade_wrap ul li:first-child {
+    font-size: 1.3rem;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+  .contents .trade_wrap ul li p {
+    font-size: 1rem;
+  }
+  .contents .trade_wrap ul li p > span {
+    font-size: 1.2rem;
+  }
+  .contents .trade_wrap ul li > span {
+    width: 90px;
+    font-size: 0.9rem;
   }
   .contents .defer_wrap li .cir_icon > a {
     margin: 0 10px;
@@ -791,7 +810,7 @@ body {
     height: 80px; */
   }
   .contents .defer_wrap li .cir_icon span i {
-    ont-size: 3.5rem;
+    font-size: 3.5rem;
     margin-bottom: 17px;
   }
 }
@@ -821,14 +840,47 @@ body {
   .contents .busi_wrap .busi_con .busi_item p {
     font-size: 0.9rem;
   }
+}
+@media (max-width: 420px) {
+  .contents .news_wrap .news_room .news_btn {
+    width: 340px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contents .news_wrap .k-news .news_title h1,
+  .contents .news_wrap .sns_btn p,
+  .contents .busi_wrap .busi_title h1 {
+    font-size: 1.6rem;
+  }
+  .contents .news_wrap .sns_btn a img {
+    width: 35px;
+  }
+  .contents .news_wrap .k-news .news_title p,
+  .contents .busi_wrap .busi_title p {
+    font-size: 0.8rem;
+  }
   .contents .trade_wrap ul li:first-child {
-    font-size: 1.2rem;
-    line-height: 5.5;
+    font-size: 1.1rem;
+    padding: 15px 0;
   }
   .contents .trade_wrap ul li p {
     font-size: 0.9rem;
   }
-  .contents .trade_wrap ul li > span {
+  .contents .trade_wrap ul li p > span {
     font-size: 1rem;
+  }
+  .contents .trade_wrap ul li > span {
+    /* margin: 16px 0 16px 20px; */
+    width: 80px;
+    height: 52%;
+    margin: 12px 0 12px 16px;
+    display: inline-block;
+    background: #fff;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 500;
+    border-radius: 20px;
+    font-size: 0.8rem;
   }
 }
