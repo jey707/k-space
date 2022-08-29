@@ -16,6 +16,36 @@ const topBtn = document.querySelector(".top-btn");
 document.addEventListener("DOMContentLoaded", function () {
   new VideoBackgrounds("[data-vbg]");
 });
+(function () {
+  const controller = new ScrollMagic.Controller();
+  const scene1 = new ScrollMagic.Scene({
+    triggerElement: "#news_wrap", //트리거 설정
+    triggerHook: 0.8,
+    reverse: false,
+  })
+    .setClassToggle("#news_wrap", "scr-visible")
+    .addTo(controller);
+
+  const revealElements = document.getElementsByClassName("busi_item");
+
+  for (var i = 0; i < revealElements.length; i++) {
+    // console.log(`transition-delay: ${delay}s`);
+    const scene2 = new ScrollMagic.Scene({
+      triggerElement: revealElements[i],
+      offset: 150,
+      triggerHook: 0.9,
+      reverse: false,
+    })
+      // .setClassToggle(revealElements[i], `visible${i}`) // add class toggle
+      .setClassToggle(revealElements[i], `scr-visible`) // add class toggle
+      .addTo(controller);
+    // .addIndicators({
+    //   name: "(busi_con) " + (i + 1),
+    //   colorStart: "#F6B352",
+    //   colorTrigger: "#F6B352",
+    // });
+  }
+})();
 
 function hoverImg(tag) {
   let hover_gif = tag.dataset.hover;

@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .contents {
   width: 100vw;
   box-sizing: border-box;
@@ -135,6 +136,16 @@ body {
     transform: rotate(45deg) translate(10px, 10px);
     opacity: 0;
   }
+}
+
+.contents .scr-animation {
+  transform: translateY(100px);
+  opacity: 0;
+}
+.contents .news_wrap .scr-animation.scr-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s;
 }
 
 .contents .news_wrap .k-news {
@@ -373,6 +384,28 @@ body {
   text-align: center;
   color: #484848;
 }
+.contents .busi_wrap .busi_con .busi_animation {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.contents .busi_wrap .busi_con .scr-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s;
+}
+
+.contents .busi_wrap .busi_con .delay0 {
+  transition-delay: 0;
+}
+.contents .busi_wrap .busi_con .delay1 {
+  transition-delay: 0.2s;
+}
+.contents .busi_wrap .busi_con .delay2 {
+  transition-delay: 0.4s;
+}
+
 .contents .busi_wrap .busi_con .busi_item span {
   display: inline-block;
   width: 285px;
